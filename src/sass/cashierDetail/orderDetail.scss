@@ -1,0 +1,77 @@
+// 头部 公共的
+$ratio: 100;
+
+// 主要内容区域
+.w-main {
+	// 订单详情
+	.w-detail {
+		padding: (23rem/$ratio);
+		font-size: (28rem/$ratio);
+		color: #8e8e8e;
+		border: (10rem/$ratio) solid #e6e9ee;
+		> div {
+			line-height: (50rem/$ratio);
+			height: (50rem/$ratio);
+		}
+		.pepole-info {
+			color: #5c5c5c;
+		}
+	}
+	// 商品信息
+	.w-infos {
+		padding: (23rem/$ratio);
+		font-size: (28rem/$ratio);
+
+		border: (10rem/$ratio) solid #e6e9ee;
+		.left-box {
+			width: (166rem / $ratio);
+			height: (166rem / $ratio);
+			background: #6f6f6f;
+			margin-right: (15rem/$ratio);
+		}
+		.good-info {
+			width: (496rem/$ratio);
+			// 文字描述
+			p {
+				width: (496rem/$ratio);
+				height: (68rem/$ratio);
+				line-height: (34rem/$ratio);
+				margin-bottom: (56rem / $ratio);
+
+				color: #303030;
+				// 多行省略号
+				overflow: hidden; //必须
+				display: -webkit-box; //必须
+				-webkit-line-clamp: 2; //必须
+				-webkit-box-orient: vertical; //必须
+			}
+			.good-text {
+				font-size: (27rem/$ratio);
+			}
+			.xinghao {
+				display: block;
+				height: (25rem/$ratio);
+				color: #a2a2a2;
+			}
+			.good-price {
+				display: block;
+				color: #e85555;
+			}
+		}
+	}
+	// 价格
+	.w-price {
+		padding: (23rem/$ratio);
+		font-size: (32rem/$ratio);
+
+		color: #5c5c5c;
+		> div {
+			height: (80rem/$ratio);
+			line-height: (80rem/$ratio);
+			border-bottom: 1px solid #e6e9ee;
+		}
+		.real-collection {
+			color: #e85555;
+		}
+	}
+}

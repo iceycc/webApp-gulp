@@ -1,5 +1,5 @@
 ##  基本步骤
-1-全局安装gulp`npm install gulp -g`
+1-全局安装gulp`npm install gulp -g`  
 2-`npm install`  
 3-需要rimraf，我们必须先进行全局安装 `npm install rimraf -g` 
 ##  npm命令  

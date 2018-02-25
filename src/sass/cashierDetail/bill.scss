@@ -1,0 +1,17 @@
+// 收银列表11
+$ratio: 100;
+
+
+
+
+.bill-btn{
+    border-style: none;
+    background: #fff;
+    width:(156rem/$ratio);
+    height:(56rem/$ratio); 
+    border-radius: (5rem/$ratio) ;
+    border:1px solid #A2A2A2;
+    color:#303030;
+    font-size: (30rem/$ratio);
+    margin-left: (20rem/$ratio);
+}

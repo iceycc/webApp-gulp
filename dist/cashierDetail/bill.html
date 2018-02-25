@@ -10,27 +10,92 @@
     <meta http-equiv="expires" content="0" />
     <script src="../js/lib/rem.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="../css/lib/app.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/doubleEleven.css">
+    <!--  -->
+    <link rel="stylesheet" href="../css/cashierDetail/wcommon.css">
+    <link rel="stylesheet" type="text/css" href="../css/cashierDetail/bill.css">
 </head>
 <body>
-    <!-- 挂单 -->
-    <!-- 挂账时间 -->
-    <div class="billtime">
-        <span>挂账时间</span>
-        <span>2017-12-05 20:05</span>
-    </div>
-    <!-- 商品详情 -->
-    <ul class="goodsDetails">
-       <li class=""></li>
-    </ul>
-    <!-- 数量和继续收银 -->
-    <div class="num">
-        <p>共<i>2</i>件商品</p>
-        <div class="btn">
-            <a href="../cashier/scanEntry.html">继续收银</a>
-            <a href="">删除</a>
+  <!-- 头部 -->
+  <div class="w-header">
+        <!-- 返回按钮 -->
+        <a class="go-back fl"><img src="../img/go-back.png" alt=""></a>
+        <!-- 标题 -->
+        <span class="w-title-b w-title">挂单</span>
+        
+        <a class="go-search fr"><img src="../img/select1.png" alt=""></a>
+ </div>
+ <!-- 主要 -->
+ <div class="w-main">
+
+    <!-- 订单列表 1-->
+    <div class="order-list">
+        <h3>挂账时间: <span> 2017-12-05 20:05</span></h3>
+            <!-- 商品信息 盒子  可以重复-->
+        <div class="w-infos clearfix">
+            <!-- 左侧盒子 -->
+            <div class="left-box fl"></div>
+            <!-- 右侧信息 -->
+            <div class="good-info fl">
+                <p>商品名称商品名称商品名称商品名称商商品名称商品名称商品名称商品名称商商品名称...</p>
+                <div class="good-text">
+                    <span class="xinghao fl">型号、规格</span>
+                    <span class="good-price fr"><i>￥340.00</i>x<i>2</i></span>
+                </div>
+            </div>
+        </div>
+        <!-- 统计 -->
+        <div class="count">
+            <span class="fl">共2件商品</span>
+            <div class="fr">
+                <button class="bill-btn">继续收银</button>
+                <button class="bill-btn">删除</button>                
+            </div>
         </div>
     </div>
+
+    <!-- 间隔线 -->
+    <div class="w-line"></div>
+        <!-- 订单列表 2-->
+    <div class="order-list">
+        <h3>挂账时间: <span> 2017-12-05 20:05</span></h3>
+            <!-- 商品信息 盒子  可以重复-->
+        <div class="w-infos clearfix">
+            <!-- 左侧盒子 -->
+            <div class="left-box fl"></div>
+            <!-- 右侧信息 -->
+            <div class="good-info fl">
+                <p>商品标题商品标题商品标题商品标题商标题品标题商品标题商品标题商品标商品标题商品标题商品标题商品标题商...</p>
+                <div class="good-text">
+                    <span class="xinghao fl">型号、规格</span>
+                    <span class="good-price fr"><i>￥340.00</i>x<i>2</i></span>
+                </div>
+            </div>
+        </div>
+        <div class="w-infos clearfix">
+                <!-- 左侧盒子 -->
+                <div class="left-box fl"></div>
+                <!-- 右侧信息 -->
+                <div class="good-info fl">
+                    <p>商品标题商品标题商品标题商品标题商标题品标题商品标题商品标题商品标商品标题商品标题商品标题商品标题商...</p>
+                    <div class="good-text">
+                        <span class="xinghao fl">型号、规格</span>
+                        <span class="good-price fr"><i>￥340.00</i>x<i>2</i></span>
+                    </div>
+                </div>
+            </div>
+        <!-- 统计 -->
+        <div class="count">
+                <span class="fl">共2件商品</span>
+                <div class="fr">
+                        <button class="bill-btn">继续收银</button>
+                        <button class="bill-btn">删除</button> 
+                </div>
+
+        </di>
+    </div>
+ </div>
+      
+
 <script src="../js/lib/jquery-2.1.4.min.js"></script>
 <script src="../js/lib/jweixin-1.0.0.js "></script>
 <script src="../js/lib/JQuery.md5.js"></script>

@@ -1,0 +1,174 @@
+// 公共待提取
+$ratio: 100;
+body {
+	background: #fff !important;
+	font-family: PingFang-SC-Medium;
+	
+}
+.fl {
+	display: block;
+	float: left;
+}
+.fr {
+	display: block;
+	float: right;
+}
+.clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+// 头部
+.w-header {
+	position: relative;
+	height: (100rem/$ratio);
+	line-height: (100rem/$ratio);
+	font-size: 0;
+	border-bottom: 1px solid #d3d6dc;
+	.go-back,
+	.go-search {
+		height: 100%;
+		&::after{
+			content: '';
+			display: inline-block;
+			vertical-align: middle;			
+			height: 100%;
+		}
+		img {
+			display: inline-block;			
+			vertical-align: middle;
+			height: (43rem / $ratio);			
+		}
+	}
+	.go-back {
+		margin-left: (40rem/$ratio);
+		
+	}
+	.go-search {
+		margin-right: (40rem/$ratio);
+	}
+	.w-title{
+		position: absolute;
+		width: 100%;
+		left: 0;		
+		text-align: center;
+		font-size: (38rem / $ratio);
+		font-family: PingFang-SC-Medium;
+		color: #303030;
+	}
+	// 订单详情头
+
+	// 收银列表
+	.w-title-c1 {
+		margin-left:- (120rem / $ratio);
+	}
+	
+	.w-title-c2{
+		margin-left: (120rem / $ratio);		
+	}
+
+	.active {
+		color: #e56d17;
+	}
+}
+
+// mian
+// 基本一样
+.w-main {
+	// 挂单 收银 盒子
+	.w-boxes {
+		padding: (23rem/$ratio);
+		font-size: (30rem/$ratio);
+		border-bottom: (10rem/$ratio) solid #e6e9ee;
+		span {
+			width: (156rem/$ratio);
+			height: (56rem/$ratio);
+			line-height: (56rem/$ratio);
+			text-align: center;
+			border-radius: 5px;
+			border: 1px solid #a2a2a2;
+			margin-left: (20rem/$ratio);
+		}
+    }
+    // 线
+	.w-line {
+		height: (20rem/$ratio);
+		background: #E6E9EE;
+    }
+    // 商品详情列表
+	.order-list {
+		// 标题
+		h3 {
+			padding-left: (23rem/$ratio);
+			font-size: (32rem/$ratio);
+			font-family: PingFang-SC-Medium;
+			color: #a2a2a2;
+			height: (100rem/$ratio);
+			line-height: (100rem/$ratio);
+		}
+		// 商品信息
+		.w-infos {
+			padding: (23rem/$ratio);
+			font-size: (28rem/$ratio);
+			font-family: PingFang-SC-Medium;
+			background: #f9f9f9;
+			.left-box {
+				width: (166rem / $ratio);
+				height: (166rem / $ratio);
+				background: #6f6f6f;
+				margin-right: (30rem/$ratio);
+			}
+			.good-info {
+				width: (496rem/$ratio);
+				// 文字描述
+				p {
+                    
+                    width: (496rem/$ratio);
+                    height: (68rem/$ratio);
+                    line-height: (34rem/$ratio);
+					margin-bottom: (56rem / $ratio);
+					font-family: PingFang-SC-Medium;
+                    color: #303030;
+                    // 多行省略号
+                    overflow: hidden;//必须
+                    display: -webkit-box;//必须
+                    -webkit-line-clamp: 2;//必须
+                    -webkit-box-orient: vertical;//必须
+				}
+				.good-text {
+					font-size: (27rem/$ratio);
+					font-family: PingFang-SC-Medium;
+				}
+				.xinghao {
+					display: block;
+					height: (25rem/$ratio);
+					color: #a2a2a2;
+				}
+				.good-price {
+					display: block;
+					color: #e85555;
+				}
+			}
+		}
+
+		.count {
+			padding-right: (23rem/$ratio);
+			font-size: (26rem/$ratio);
+			font-family: PingFang-SC-Medium;
+			color: #7f7f7f;
+			height: (100rem/$ratio);
+			line-height: (100rem/$ratio);
+			span {
+				margin-left: (20rem/$ratio);
+			}
+		}
+	}
+}
