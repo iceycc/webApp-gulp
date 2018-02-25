@@ -1,6 +1,7 @@
 ##  基本步骤
-1-`npm install`  
-2-需要rimraf，我们必须先进行全局安装 `npm install rimraf -g` 
+1-全局安装gulp`npm install gulp -g`
+2-`npm install`  
+3-需要rimraf，我们必须先进行全局安装 `npm install rimraf -g` 
 ##  npm命令  
 1. 使用npm start命令将对应执行gulp dev命令； 
 2. 使用npm run dev命令将对应执行gulp dev命令； 

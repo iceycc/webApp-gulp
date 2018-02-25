@@ -10,7 +10,7 @@ var Config = {
     dist_files: DIST_FILES,
     html: {  
         dir: SRC_DIR,
-        src: SRC_DIR + '*.html',  
+        src: SRC_DIR + 'pages/**/*.html',  
         dist: DIST_DIR  
     },  
     assets: {  
@@ -35,9 +35,9 @@ var Config = {
         build_name: 'build.js'                   // 合并后的js的文件名  
     },  
     img: {  
-        dir: SRC_DIR + 'images',
-        src: SRC_DIR + 'images/**/*',            // images目录：./src/images/  
-        dist: DIST_DIR + 'images'                // images文件build后存放的目录：./dist/images  
+        dir: SRC_DIR + 'img',
+        src: SRC_DIR + 'img/**/*',            // images目录：./src/images/  
+        dist: DIST_DIR + 'img'                // images文件build后存放的目录：./dist/images  
     }  
 };
 
